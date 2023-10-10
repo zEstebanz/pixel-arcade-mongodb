@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap');
+
 
 .indexCoverBack {
   background-image: url("https://images3.alphacoders.com/268/268495.jpg");
@@ -23,25 +25,42 @@
   font-size: 20px;
 }
 
-/* Footer */
-
-/* Footer */
-.footerCustom {
-  background-color: #242424;
-  font-family: "VT323", monospace;
-  font-size: 20px;
+/* Textos, Titulos, P.*/
+.titleCover {
+  text-align: center;
+  font-size: 60px;
+  color: #FF0080;
+  background-color: rgba(0, 0, 0, 0.534);
+  height: auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  line-height: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 
-.footerCustomRS {
-  color: #FF0080;
-}
-
-.footerCustomRS:hover {
-  transition: 0.5s;
+.titleCover .span {
   color: #32CD32;
 }
 
-/* End Footer */
+/* Section Contact*/
+.sectionContact {
+  background-color: #242424;
+  color: white;
+  font-family: "VT323", monospace;
+  font-size: 30px;
+}
+
+/* Botones Custom */
+
+.buttonCustom {
+  background-color: #339233;
+}
+
+.buttonCustom:hover {
+  background-color: #155837;
+}
+
+/* End Botones Custom */

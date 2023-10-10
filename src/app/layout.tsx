@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Nav from '@/components/Nav'
 import Providers from './Providers'
 import Footer from '@/components/Footer'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Nav />
+      <body>
         <Providers>
+          <Nav />
           <div className='indexCoverBack mt-16'>
             {children}
           </div>

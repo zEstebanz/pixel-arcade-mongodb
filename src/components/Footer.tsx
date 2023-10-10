@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0">
-            <img src="https://cdn2.icon-icons.com/icons2/665/PNG/512/alien_pixel_icon-icons.com_60289.png" className="h-8 mr-3" alt="Flowbite Logo" />
+            <img src="https://cdn.icon-icons.com/icons2/665/PNG/512/alien_pixel2_icon-icons.com_60290.png" className="h-8 mr-3" alt="Flowbite Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PixelArcade</span>
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-gray-400">
