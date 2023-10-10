@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.indexCoverBack {
+  background-image: url("https://images3.alphacoders.com/268/268495.jpg");
+  height: 100vh;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+}
+
+.backgroundCover {
+  background-color: rgba(0, 0, 0, 0.801);
+  border-radius: 20px;
+}
