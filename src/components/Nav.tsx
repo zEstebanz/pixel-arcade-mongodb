@@ -30,7 +30,7 @@ async function Nav() {
                                     <Link href="/game" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Games</Link>
                                 </li>
                                 <li>
-                                    <Link href="/turno" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Turnos</Link>
+                                    <Link href="/turnos" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Turnos</Link>
                                 </li>
                                 <li>
                                     <Link href="/dashboard/profile" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Perfil</Link>

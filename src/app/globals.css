@@ -12,6 +12,7 @@
 .backgroundCover {
   background-color: rgba(0, 0, 0, 0.801);
   border-radius: 20px;
+  padding-top: 10px;
 }
 
 .boxGameCustom {
