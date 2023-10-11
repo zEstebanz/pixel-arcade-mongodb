@@ -46,6 +46,15 @@ function Turnos() {
             name="fecha"
           />
 
+          <label className="text-slate-300">Hora:</label>
+          <input
+            type="time"
+            id="hora"
+            className="text-white bg-zinc-800 px-2 py-1 block w-full mb-2"
+            name="hora"
+            required
+          />
+
           <label className="text-slate-300">opcion:</label>
           <select
             id="opcion"

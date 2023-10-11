@@ -3,6 +3,8 @@ import React from 'react'
 function Contact() {
     return (
         <div className='p-1 pt-8'>
+            <h1 className="text-center text-white text-6xl text-white font-bold mb-4">Contacto</h1>
+
             <div className='boxGameCustom p-8'>
                 <h1 className="text-3xl font-semibold mt-4">Contacto</h1>
                 <div className="container mx-auto flex flex-col md:flex-row mt-6">
