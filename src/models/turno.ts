@@ -18,4 +18,4 @@ const turnoSchema = new mongoose.Schema({
 
 //Creamos el modelo a partir del Schema
 //La funcion crea una coleccion en la BD "turno"
-export const TurnoModel = mongoose?.models?.turno || mongoose.model("turnos", turnoSchema)
+export const TurnoModel = mongoose?.models?.turno

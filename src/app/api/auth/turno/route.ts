@@ -15,6 +15,20 @@ export const POST = async (req, res) => {
     }
 }
 
+export const GET = async (req, res) => {
+    await connectDB();
+
+    try {
+        // Realiza una consulta para obtener todos los turnos
+        const turnos = await TurnoModel.find();
+
+        // Devuelve los turnos en la respuesta
+        return NextResponse.json({ data: turnos }, { status: 200 });
+    } catch (error) {
+        return NextResponse.json({ data: null }, { status: 500 });
+    }
+}
+
 
 
 // export const POST = async (request: Request) =>{
