@@ -3,6 +3,7 @@ import { FormEvent, useState } from "react";
 import axios, { AxiosError } from "axios";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 function Turnos() {
   const [error, setError] = useState();
@@ -15,6 +16,7 @@ function Turnos() {
       const formData = new FormData(event.currentTarget);
       const turnoResponse = await axios.post("/api/auth/turno", {
         fecha: formData.get("fecha"),
+        hora: formData.get("hora"),
         opcion: formData.get("opcion"),
       });
       console.log(turnoResponse);
@@ -70,6 +72,9 @@ function Turnos() {
           <button className="bg-blue-500 text-white px-2 py-1 mt-4 block w-full">
             Registrar Turno
           </button>
+
+          <h1 className="text-white text-2xl md:text-4xl font-bold mb-4 md:mb-7 pt-8">Mis Turnos</h1>
+          <Link href={'/dashboard/turnos'} className="text-center bg-blue-500 text-white px-2 py-1 mt-4 block w-full">Mis Turnos</Link>
         </form>
       </div>
     </section>

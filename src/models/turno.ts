@@ -2,7 +2,11 @@ import mongoose from "mongoose";
 //Creamos un Schema
 const turnoSchema = new mongoose.Schema({
   fecha: {
-    type: Date,
+    type: String,
+    required: true,
+  },
+  hora: {
+    type: String,
     required: true,
   },
   opcion: {
@@ -14,4 +18,4 @@ const turnoSchema = new mongoose.Schema({
 
 //Creamos el modelo a partir del Schema
 //La funcion crea una coleccion en la BD "turno"
-export const TurnoModel = mongoose?.models?.turno || mongoose.model("turno", turnoSchema)
+export const TurnoModel = mongoose?.models?.turno || mongoose.model("turnos", turnoSchema)

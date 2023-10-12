@@ -4,20 +4,16 @@ import { NextResponse } from 'next/server';
 import { TurnoModel } from '@/models/turno';
 
 //crear
-export const POST = async (request: Request) => {
-    return NextResponse.json({
-        message: "Creando tarea...",
-    })
+export const POST = async (req, res) => {
+    await connectDB()
+    try {
+        const body = await req.json()
+        const newTurno = await TurnoModel.create(body)
+        return NextResponse.json({ data: newTurno }, { status: 200 })
+    } catch (error) {
+        return NextResponse.json({ data: null }, { status: 500 })
+    }
 }
-
-export const GET = async () => {
-    return NextResponse.json({
-        message: "Obteniendo tarea...",
-    })
-}
-
-
-
 
 
 
