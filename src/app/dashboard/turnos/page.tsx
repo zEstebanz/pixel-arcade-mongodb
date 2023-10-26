@@ -1,5 +1,6 @@
 import { connectDB } from '@/libs/mongodb';
 import { TurnoModel } from '@/models/turno';
+import Link from 'next/link';
 
 async function loadTurno() {
     connectDB()
@@ -12,7 +13,7 @@ async function DashboarTurnos() {
 
     return (
         <div className="text-white flex flex-col items-center justify-center h-auto lg:h-[calc(100vh-4rem)] gap-y-5 p-4">
-            <h1 className="font-bold text-3xl text-center">Mis Turnos</h1>
+            <h1 className="text-center text-white text-6xl text-white font-bold">Mis Turnos</h1>
 
             <div className="bg-zinc-800 p-4 rounded-lg overflow-x-auto">
                 <table className="w-full border-collapse">
@@ -33,6 +34,9 @@ async function DashboarTurnos() {
                         ))}
                     </tbody>
                 </table>
+
+                <Link href={'/turnos'} className="text-center bg-blue-500 text-white px-2 py-1 mt-4 block w-full">Pedir Turno</Link>
+
             </div>
         </div>
     );
