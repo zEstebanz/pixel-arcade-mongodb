@@ -38,7 +38,7 @@ const Nav = () => {
                             <>
 
                                 <li>
-                                    <Link href="/game" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Games</Link>
+                                    <Link href="/games" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Games</Link>
                                 </li>
                                 <li>
                                     <Link href="/contact" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Contact</Link>
