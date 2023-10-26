@@ -1,15 +1,20 @@
 import { connectDB } from '@/libs/mongodb';
-import { TurnoModel } from '@/models/turno';
+import TurnoModel from '@/models/turno';
 import Link from 'next/link';
 
 async function loadTurno() {
-    connectDB()
-    const mostarTurno = await TurnoModel.find()
-    return mostarTurno
+    try {
+        await connectDB();
+        const mostrarTurno = await TurnoModel.find();
+        return mostrarTurno;
+    } catch (error) {
+        console.error('Error al cargar los turnos:', error);
+        return [];
+    }
 }
 
 async function DashboarTurnos() {
-    const mostrarTurno = await loadTurno()
+    const mostrarTurno = await loadTurno();
 
     return (
         <div className="text-white flex flex-col items-center justify-center h-auto lg:h-[calc(100vh-4rem)] gap-y-5 p-4">

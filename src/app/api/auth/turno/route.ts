@@ -1,19 +1,22 @@
-// pages/api/blog.js
 import { connectDB } from '@/libs/mongodb';
 import { NextResponse } from 'next/server';
-import { TurnoModel } from '@/models/turno';
+import TurnoModel from '@/models/turno';
 
-//crear
 export const POST = async (req, res) => {
-    await connectDB()
+    await connectDB();
+
     try {
-        const body = await req.json()
-        const newBlog = await TurnoModel.create(body)
-        return NextResponse.json({ data: newBlog }, { status: 200 })
+        const body = await req.json();
+        const newTurno = await TurnoModel.create(body);
+
+        return NextResponse.json({ data: newTurno }, { status: 200 });
     } catch (error) {
-        return NextResponse.json({ data: null }, { status: 500 })
+        console.error('Error al crear el turno:', error);
+
+        return NextResponse.json({ data: null }, { status: 500 });
     }
-}
+};
+
 
 export const GET = async (req, res) => {
     await connectDB();

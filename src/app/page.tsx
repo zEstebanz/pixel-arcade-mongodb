@@ -20,7 +20,7 @@ async function HomePage() {
               <Link href="/turnos" className="buttonCustom text-white py-2 px-4 rounded-full text-lg inline-block mt-4">Pedir Turnos</Link>
 
               <p className="text-lg p-4">Juegos</p>
-              <Link href="/game" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg inline-block mt-4">Jugar ahora</Link>
+              <Link href="/game" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg inline-block">Jugar ahora</Link>
 
               {/* <p className="text-lg">También queremos recordarte que puedes registrarte en nuestro sistema para solicitar turnos en nuestro local de videojuegos. ¡Aprovecha al máximo tu experiencia en Pixel Arcade!</p> */}
             </section>
