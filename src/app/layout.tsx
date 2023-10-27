@@ -26,13 +26,9 @@ export default function RootLayout({
       <div>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet" />
-
-        <div>
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap');
-</div>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
       </div>
-
+      
       <body>
         <Providers>
           <Nav />

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *{
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: 'VT323', monospace;
 }
 
 /* Para dispositivos móviles o pantallas de tamaño pequeño */
@@ -34,9 +34,8 @@
 
 .textCenter {
   text-align: center;
-  font-size: 50px;
+  font-size: 80px;
   color: #00FF7F;
-  font-family: 'Pixelify Sans', sans-serif;
 }
 
 .backgroundCover {
