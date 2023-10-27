@@ -65,10 +65,10 @@ function Game() {
               </a>
               <div className="card-body mt-3">
                 <h3 className="text-2xl font-bold">{game.title}</h3>
-                <p className="text-gray-300">#</p>
+                {/* <p className="text-gray-300">#</p> */}
                 <a
                   href={`/juego?gameUrl=${encodeURIComponent(game.url)}&title=${encodeURIComponent(game.title)}`}
-                  className="bg-blue-500 text-white mt-2 py-1 px-4 rounded-full inline-block"
+                  className="buttonCustom2 text-white mt-2 py-1 px-4 rounded-full inline-block"
                 >
                   Jugar
                 </a>

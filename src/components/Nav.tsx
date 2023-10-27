@@ -44,7 +44,10 @@ const Nav = () => {
                                     <Link href="/contact" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Contact</Link>
                                 </li>
                                 <li>
-                                    <Link href="/turnos" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Turnos</Link>
+                                    <Link href="/turnos" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Pedir Turno</Link>
+                                </li>
+                                <li>
+                                    <Link href="/dashboard/turnos" className="buttonCustom2 block py-2 pl-3 pr-4 text-white rounded" aria-current="page">Mis Turnos</Link>
                                 </li>
                                 <li>
                                     <Link href="/dashboard/profile" className="buttonCustom block py-2 pl-3 pr-4 text-white rounded" aria-current="page">Perfil</Link>

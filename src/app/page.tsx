@@ -8,7 +8,8 @@ async function HomePage() {
   return (
     <section className="p-8">
       <div className="text-white container mx-auto text-center backgroundCover">
-        <h1 className="text-6xl font-bold">Pixel Arcade</h1>
+        <h1 className="textCenter font-mont">Pixel Arcade</h1>
+
         {session ? (
           <>
             <section className="text-center p-8">
@@ -20,7 +21,7 @@ async function HomePage() {
               <Link href="/turnos" className="buttonCustom text-white py-2 px-4 rounded-full text-lg inline-block mt-4">Pedir Turnos</Link>
 
               <p className="text-lg p-4">Juegos</p>
-              <Link href="/game" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg inline-block">Jugar ahora</Link>
+              <Link href="/games" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg inline-block">Jugar ahora</Link>
 
               {/* <p className="text-lg">También queremos recordarte que puedes registrarte en nuestro sistema para solicitar turnos en nuestro local de videojuegos. ¡Aprovecha al máximo tu experiencia en Pixel Arcade!</p> */}
             </section>
@@ -31,14 +32,14 @@ async function HomePage() {
               <h2 className="text-3xl font-semibold">Welcome to Pixel Arcade</h2>
 
 
-              <p className="mt-8 text-lg">¿Eres Nuevo? Registrate aquí</p>
+              <p className="mt-4 text-lg">¿Eres Nuevo? Registrate aquí</p>
               <Link href="/register" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg inline-block mt-2">Crear Cuenta</Link>
 
-              <p className="mt-8 text-lg">¿Ya tienes una cuenta? Inicia Sesión aquí</p>
+              <p className="text-lg">¿Ya tienes una cuenta? Inicia Sesión aquí</p>
               <Link href="/login" className="buttonCustom text-white py-2 px-4 rounded-full text-lg inline-block mt-2">Iniciar Sesión</Link>
 
-              <p className="text-lg p-4">¿Quieres jugar a juegos online?</p>
-              <Link href="/game" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg inline-block mt-4">Jugar ahora</Link>
+              <p className="text-lg">¿Quieres jugar a juegos online?</p>
+              <Link href="/games" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg inline-block">Jugar ahora</Link>
 
               <p className="text-lg p-4">Pixel Arcade es un sistema de gestión de usuarios y una plataforma online donde pueden jugar a juegos retro.</p>
 
