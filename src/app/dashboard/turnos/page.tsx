@@ -1,6 +1,7 @@
 import { connectDB } from '@/libs/mongodb';
 import TurnoModel from '@/models/turno';
 import Link from 'next/link';
+import axios from 'axios';
 
 async function loadTurno() {
     try {
@@ -15,6 +16,7 @@ async function loadTurno() {
 
 async function DashboarTurnos() {
     const mostrarTurno = await loadTurno();
+
 
     return (
         <div className="text-white flex flex-col items-center justify-center h-auto lg:h-[calc(100vh-4rem)] gap-y-5 p-4">
@@ -38,6 +40,7 @@ async function DashboarTurnos() {
                             </tr>
                         ))}
                     </tbody>
+
                 </table>
 
                 <Link href={'/turnos'} className="text-center bg-blue-500 text-white px-2 py-1 mt-4 block w-full">Pedir Turno</Link>

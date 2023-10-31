@@ -32,6 +32,26 @@ export const GET = async (req, res) => {
     }
 }
 
+export const PUT = async (req, res) => {
+    await connectDB();
+
+    try {
+        const { id } = req.query;
+        const turno = await TurnoModel.findById(id);
+
+        if (!turno) {
+            return NextResponse.json({ data: null, message: 'Turno no encontrado' }, { status: 404 });
+        }
+
+        // Elimina el turno
+        await turno.remove();
+
+        return NextResponse.json({ data: turno, message: 'Turno eliminado' }, { status: 200 });
+    } catch (error) {
+        return NextResponse.json({ data: null, message: 'Error al eliminar el turno' }, { status: 500 });
+    }
+};
+
 
 
 // export const POST = async (request: Request) =>{

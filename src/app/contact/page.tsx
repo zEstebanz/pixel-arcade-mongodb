@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Contact() {
     return (
@@ -9,10 +10,10 @@ function Contact() {
                 <h1 className="text-3xl font-semibold mt-4">Contacto</h1>
                 <div className="container mx-auto flex flex-col md:flex-row mt-6">
                     <div className="md:w-1/2 pr-4">
-                        <h2 className="text-xl font-semibold">Envíanos un mensaje</h2>
+                        <h2 className="text-xl font-semibold text-center">Envíanos un mensaje</h2>
                         <form>
                             <div className="mb-4">
-                                <label htmlFor="name" className="block text-gray-600">Nombre</label>
+                                <label htmlFor="name" className="block text-gray-300">Nombre:</label>
                                 <input
                                     type="text"
                                     id="name"
@@ -22,7 +23,7 @@ function Contact() {
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="email" className="block text-gray-600">Correo electrónico</label>
+                                <label htmlFor="email" className="block text-gray-300">Correo electrónico:</label>
                                 <input
                                     type="email"
                                     id="email"
@@ -32,7 +33,7 @@ function Contact() {
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="message" className="block text-gray-600">Mensaje</label>
+                                <label htmlFor="message" className="block text-gray-300">Mensaje:</label>
                                 <textarea
                                     id="message"
                                     name="message"
@@ -42,7 +43,7 @@ function Contact() {
                             </div>
                             <button
                                 type="submit"
-                                className="buttonCustom text-white py-2 px-4 rounded transition duration-300 ease-in-out"
+                                className="buttonCustom3 text-white py-2 px-4 rounded transition duration-300 ease-in-out"
                             >
                                 Enviar Mensaje
                             </button>
@@ -63,9 +64,9 @@ function Contact() {
                         </div>
                         <div className="mt-4">
                             <h2 className="text-xl font-semibold">Información de Contacto</h2>
-                            <p>Teléfono: Tu número de teléfono</p>
-                            <p>Correo Electrónico: Tu dirección de correo</p>
-                            <p>Dirección: Tu dirección</p>
+                            <p>Teléfono: <Link href="tel:+54 261 3530413" className='textCustom'> 2612528276</Link></p>
+                            <p>Correo Electrónico:<Link  href="mailto:otecnica@mendopleg.com.ar?Subject=El%20asunto%20del%20mail" className='textCustom'> pixelarcade@gmail.com</Link> </p>
+                            <p>Dirección: <Link href="https://www.google.com/maps/place/IES+9-008+Manuel+Belgrano/@-32.911132,-68.845948,16z/data=!4m6!3m5!1s0x967e096e24fe67d3:0x8bd4ca97336e5fdb!8m2!3d-32.9111323!4d-68.8459484!16s%2Fg%2F11fy1l2m7q?hl=es&entry=ttu" className='textCustom'> Roque Sáenz Peña 1271, Godoy Cruz, Mendoza</Link></p>
                         </div>
                     </div>
                 </div>

@@ -6,23 +6,35 @@ function DashboardPage() {
     const { data: session, status } = useSession();
 
     return (
-        <div className="text-white flex flex-col items-center justify-center h-screen lg:h-[calc(100vh-4rem)] gap-y-5 p-4">
-            <h1 className="font-bold text-3xl text-center">Profile</h1>
+        <section className="h-screen">
+            <h1 className="text-white text-center text-6xl mb-8 font-bold pt-10">PERFIL</h1>
 
-            {status === "authenticated" ? (
-                <div className="bg-zinc-800 p-4 rounded-lg overflow-x-auto">
-                    <p>Name: {session.user.fullname}</p>
-                    <p>Email: {session.user.email}</p>
-                    <button className="bg-blue-500 px-4 py-2 rounded-lg w-full lg:w-auto" onClick={() => { signOut(); }}>
-                        Sign Out
-                    </button>
-                </div>
-            ) : (
-                <p>Not authenticated</p>
-            )}
+            <div className="text-white flex flex-col items-center lg:h-[calc(100vh-4rem)] gap-y-5 p-4">
+
+                {status === "authenticated" ? (
+                    <div className="flex items-center justify-center">
+                        <div className="bg-black shadow-lg rounded-lg p-4 max-w-sm mx-auto text-center">
+                            <img src="https://cdn.icon-icons.com/icons2/665/PNG/512/alien_pixel2_icon-icons.com_60290.png" alt="Foto de perfil" className="w-16 h-16 rounded-full mx-auto mb-4  border border-white" />
+                            <h2 className="text-xl font-semibold">Name: {session.user.fullname}</h2>
+                            <h2 className="text-xl font-semibold">Email: {session.user.email}</h2>
+                            <button className="buttonCustom2 block py-2 pl-3 pr-4 text-white rounded rounded-lg mx-auto block mt-5" onClick={() => { signOut(); }}>
+                                Sign Out
+                            </button>
+                        </div>
+                    </div>
+                ) : (
+                    <p>Not authenticated</p>
+                )}
 
 
-        </div>
+            </div>
+
+
+
+        </section>
+
+
+
     );
 }
 

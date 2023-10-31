@@ -19,7 +19,7 @@ const Nav = () => {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center">
                     <img src="https://cdn.icon-icons.com/icons2/665/PNG/512/alien_pixel2_icon-icons.com_60290.png" className="h-8 mr-3" />
-                    <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PixelArcade</span>
+                    <span className="text-white self-center text-4xl font-semibold whitespace-nowrap dark:text-white">PixelArcade</span>
                 </Link>
                 <button onClick={toggleMenu} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                     <span className="sr-only">Open main menu</span>
@@ -50,7 +50,7 @@ const Nav = () => {
                                     <Link href="/dashboard/turnos" className="buttonCustom2 block py-2 pl-3 pr-4 text-white rounded" aria-current="page">Mis Turnos</Link>
                                 </li>
                                 <li>
-                                    <Link href="/dashboard/profile" className="buttonCustom block py-2 pl-3 pr-4 text-white rounded" aria-current="page">Perfil</Link>
+                                    <Link href="/dashboard/profile" className="buttonCustom block py-2 pl-3 pr-4 text-white rounded" aria-current="page">PERFIL</Link>
                                 </li>
                             </>
                         ) : (

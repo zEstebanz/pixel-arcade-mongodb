@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* cambiar la fuente */
 *{
-  font-family: 'VT323', monospace;
+  font-family: 'Pixelify Sans', sans-serif;
 }
 
 /* Para dispositivos móviles o pantallas de tamaño pequeño */
@@ -36,6 +37,9 @@
   text-align: center;
   font-size: 80px;
   color: #00FF7F;
+}
+.span{
+  color: #FF0080;
 }
 
 .backgroundCover {
@@ -98,4 +102,20 @@
   background-color: #154558;
 }
 
+.buttonCustom3 {
+  background-color: #FF0080;
+}
+
+.buttonCustom3:hover {
+  background-color: #FF0080;
+}
+
+.textFooter{
+  color: #00FF7F;
+  font-size: 20px;
+}
+.textCustom{
+  color: #00FF7F;
+  font-family: sans-serif;
+}
 /* End Botones Custom */

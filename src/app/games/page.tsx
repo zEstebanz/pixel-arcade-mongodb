@@ -1,6 +1,6 @@
 // pages/games/game.js
 import React from 'react';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 function Game() {
   const games = [
@@ -39,11 +39,6 @@ function Game() {
       url: 'https://www.retrogames.cc/embed/40808-mortal-kombat-trilogy.html',
       imagen: 'https://img.asmedia.epimg.net/resizer/z2HAzhkx9G02VIVrrsq9kjqTyic=/360x0/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/H42YCTNZGNNIBMOIZYS3H6IJTE.jpg',
     },
-    {
-      title: 'RetroGames',
-      url: 'https://www.retrogames.cc/',
-      imagen: 'https://www.retrogames.cc/images/logo.png?v=20180731',
-    },
     // Agrega más juegos con sus respectivas URL
   ];
 
@@ -75,7 +70,27 @@ function Game() {
               </div>
             </div>
           ))}
+
+          {/* Inicio de Juego */}
+          <div className="boxGameCustom h-100 bg-gray-900 text-white p-4 rounded-lg shadow-lg">
+            <Link href="https://www.retrogames.cc/">
+              <img
+                src="https://scontent.fmdz4-1.fna.fbcdn.net/v/t39.30808-6/294196334_415529703927237_3624935347821343113_n.png?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6VVWRxV3PsAAX8nhtBU&_nc_ht=scontent.fmdz4-1.fna&oh=00_AfDIZLOgFKc791fI9WCZLCpJwEo7Z6Huha-NurpYcZOH8A&oe=65457CB8"
+                className="block w-full h-80 object-cover rounded-lg"
+                alt="Juego 1"
+              />
+            </Link>
+            <div className="card-body mt-3">
+              <h3 className="text-2xl font-bold">RetroGames</h3>
+              <Link href="https://www.retrogames.cc/" className="nes-btn bg-blue-500 text-white mt-2 py-1 px-4 rounded-full inline-block">
+                Jugar
+              </Link>
+            </div>
+          </div>
+          {/* Fin de juego */}
+
         </div>
+
       </div>
     </section>
   );

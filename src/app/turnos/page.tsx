@@ -73,9 +73,14 @@ function Turnos() {
             Registrar Turno
           </button>
 
-          <h1 className="text-white text-2xl md:text-4xl font-bold mb-4 md:mb-7 pt-2">Mis Turnos</h1>
-          <Link href={'/dashboard/turnos'} className="text-center bg-blue-500 text-white px-2 py-1 mt-4 block w-full">Mis Turnos</Link>
+          <div>
+            <h1 className="text-white text-center text-2xl md:text-4xl font-bold mb-4 md:mb-7 pt-8">Mis Turnos</h1>
+            <Link href={'/dashboard/turnos'} className="buttonCustom3 text-center bg-blue-500 text-white px-2 py-1 mt-4 block w-full">Mis Turnos</Link>
+          </div>
+
         </form>
+
+
       </div>
     </section>
   );

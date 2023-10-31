@@ -40,7 +40,6 @@ function Signup() {
             <div className="flex justify-center items-center p-4">
                 <form onSubmit={handleSubmit} className="backgroundCover px-4 py-6 w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/3">
                     {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
-                    <h1 className="text-white text-2xl md:text-4xl font-bold mb-4 md:mb-7">Signup</h1>
 
                     <label className="text-slate-300">Fullname:</label>
                     <input
@@ -66,8 +65,8 @@ function Signup() {
                         name="password"
                     />
 
-                    <button className="bg-blue-500 text-white px-2 py-1 block w-full">
-                        Signup
+                    <button className="buttonCustom2 text-white px-2 py-1 block w-full">
+                        Register
                     </button>
                 </form>
             </div>
