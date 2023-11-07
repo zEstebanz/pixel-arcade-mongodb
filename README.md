@@ -12,6 +12,6 @@ Para obtener una documentación detallada del proyecto, visita el [Informe de Pi
 
 ## Manual de Usuario Final
 
-Presentación del manual de usuario final, visita el [Manual de Usuario de Pixel Arcade](https://docs.google.com/document/d/1PMzYSpLcjtN7fy9kQ1bZwXiEuCQWZYszcN49b00NCMk/edit?usp=sharing). 
+Presentación del manual de usuario final, visita el [Manual de Usuario de Pixel Arcade](https://docs.google.com/document/d/1_Jb_JI4Jj-_6FTXbl5p5uq3rnNJLXApw7Fv-oP0p0Qc/edit?usp=sharing). 
 
 Siéntete libre de comentar lo que desees. Gracias!
