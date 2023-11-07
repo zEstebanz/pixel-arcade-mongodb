@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Pixel Arcade es un emocionante proyecto de desarrollo de software, un sistema de registro de usuario y turnos.Ademas de tener la posibilidad de jugar juegos retro online.
+Pixel Arcade es un emocionante proyecto de desarrollo de software, un sistema de registro de usuario y turnos. Ademas de tener la posibilidad de jugar juegos retro online.
 
 Este repositorio contiene el código fuente y la documentación necesaria para comprender, descargar y ejecutar el proyecto.
 
