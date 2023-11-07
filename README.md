@@ -2,6 +2,20 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+## Descripción
+
+Pixel Arcade es un emocionante proyecto de desarrollo de juegos que incluye una variedad de juegos retro. Este repositorio contiene el código fuente y la documentación necesaria para comprender, descargar y ejecutar el proyecto.
+
+## Documentación Detallada
+
+Para obtener una documentación detallada del proyecto, visita el [Informe de Pixel Arcade](https://docs.google.com/document/d/1PMzYSpLcjtN7fy9kQ1bZwXiEuCQWZYszcN49b00NCMk/edit?usp=sharing).
+
+## Contenido
+
+Este repositorio contiene varias carpetas, cada una relacionada con un juego específico. Además, encontrarás secciones de código fuente, activos y recursos necesarios para ejecutar cada juego.
+
 First, run the development server:
 
 ```bash
