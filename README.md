@@ -9,5 +9,3 @@ Este repositorio contiene el código fuente y la documentación necesaria para c
 ## Documentación Detallada
 
 Para obtener una documentación detallada del proyecto, visita el [Informe de Pixel Arcade](https://docs.google.com/document/d/1PMzYSpLcjtN7fy9kQ1bZwXiEuCQWZYszcN49b00NCMk/edit?usp=sharing).
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
