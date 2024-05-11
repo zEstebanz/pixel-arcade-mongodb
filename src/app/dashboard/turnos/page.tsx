@@ -20,7 +20,7 @@ async function DashboarTurnos() {
 
     return (
         <div className="text-white flex flex-col items-center justify-center h-auto lg:h-[calc(100vh-4rem)] gap-y-5 p-4">
-            <h1 className="text-center text-white text-6xl text-white font-bold">Mis Turnos</h1>
+            <h1 className="text-center text-6xl font-bold">Mis Turnos</h1>
 
             <div className="bg-zinc-800 p-4 rounded-lg overflow-x-auto">
                 <table className="w-full border-collapse">
