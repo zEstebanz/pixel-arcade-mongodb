@@ -1,8 +1,7 @@
 import { connectDB } from '@/libs/mongodb';
 import { NextResponse } from 'next/server';
 import TurnoModel from '@/models/turno';
-
-export const POST = async (req, res) => {
+export const POST = async (req: Request, res: Response) => {
     await connectDB();
 
     try {
@@ -17,42 +16,38 @@ export const POST = async (req, res) => {
     }
 };
 
-
-export const GET = async (req, res) => {
+// Especifica los tipos de req y res como Request y Response respectivamente
+export const GET = async (req: Request, res: Response) => {
     await connectDB();
 
     try {
-        // Realiza una consulta para obtener todos los blog
         const blog = await TurnoModel.find();
 
-        // Devuelve los blog en la respuesta
         return NextResponse.json({ data: blog }, { status: 200 });
     } catch (error) {
         return NextResponse.json({ data: null }, { status: 500 });
     }
 }
 
-export const PUT = async (req, res) => {
-    await connectDB();
+// Especifica los tipos de req y res como Request y Response respectivamente
+// export const PUT = async (req: Request, res: Response) => {
+//     await connectDB();
 
-    try {
-        const { id } = req.query;
-        const turno = await TurnoModel.findById(id);
+//     try {
+//         const { id } = req.query;
+//         const turno = await TurnoModel.findById(id);
 
-        if (!turno) {
-            return NextResponse.json({ data: null, message: 'Turno no encontrado' }, { status: 404 });
-        }
+//         if (!turno) {
+//             return NextResponse.json({ data: null, message: 'Turno no encontrado' }, { status: 404 });
+//         }
 
-        // Elimina el turno
-        await turno.remove();
+//         await turno.remove();
 
-        return NextResponse.json({ data: turno, message: 'Turno eliminado' }, { status: 200 });
-    } catch (error) {
-        return NextResponse.json({ data: null, message: 'Error al eliminar el turno' }, { status: 500 });
-    }
-};
-
-
+//         return NextResponse.json({ data: turno, message: 'Turno eliminado' }, { status: 200 });
+//     } catch (error) {
+//         return NextResponse.json({ data: null, message: 'Error al eliminar el turno' }, { status: 500 });
+//     }
+// };
 
 // export const POST = async (request: Request) =>{
 //     await connectDB()

@@ -21,7 +21,7 @@ function GamePage() {
       iframe.width = '600';
       iframe.height = '450';
       iframe.frameBorder = 'no';
-      iframe.allowFullScreen = true;
+      iframe.allowFullscreen = true;
       iframe.webkitAllowFullScreen = true;
       iframe.mozAllowFullScreen = true;
       iframe.scrolling = 'no';

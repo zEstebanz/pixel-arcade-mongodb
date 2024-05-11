@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       
-      <div>
+      {/* <div>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet" />
-      </div>
+      </div> */}
 
       <body>
         <Providers>
