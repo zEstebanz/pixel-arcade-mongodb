@@ -10,6 +10,11 @@ function Game() {
       imagen: 'https://i.3djuegos.com/juegos/5327/super_mario_bros/fotos/ficha/super_mario_bros-1698422.webp',
     },
     {
+      title: 'Pixel Aventure',
+      url: 'https://itch.io/embed/2702169',
+      imagen: 'https://img.itch.zone/aW1nLzE2MTA4OTA0LnBuZw==/original/gqmCK6.png',
+    },
+    {
       title: 'Doom',
       url: 'https://www.retrogames.cc/embed/40297-doom-europe.html',
       imagen: 'https://i.3djuegos.com/juegos/5425/doom/fotos/ficha/doom-1716462.webp',
