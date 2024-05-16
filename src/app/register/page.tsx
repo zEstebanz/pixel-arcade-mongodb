@@ -24,7 +24,12 @@ function Signup() {
                 redirect: false,
             });
 
-            if (res?.ok) return router.push("/");
+            if (res?.ok) {
+                // Redirigir al usuario a la página principal
+                router.push("/");
+                // Recargar la página
+                window.location.reload();
+            }
         } catch (error) {
             console.log(error);
             if (error instanceof AxiosError) {
