@@ -19,15 +19,12 @@ function Login() {
         });
 
         if (res?.error) return setError(res.error as string);
-        if (res?.ok) return router.push("/dashboard/profile");
-
-        console.log(res);
-
+        if (res?.ok) return router.push("/");
     };
 
     return (
         <section className="p-8">
-            <h1 className="text-center text-white text-6xl text-white font-bold">Login</h1>
+            <h1 className="text-center text-white text-6xl font-bold">Login</h1>
             <div className="flex justify-center items-center p-4">
                 <form onSubmit={handleSubmit} className="backgroundCover px-4 py-6 w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/3">
                     {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
