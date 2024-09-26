@@ -48,7 +48,7 @@ function Game() {
   ];
 
   return (
-    <section className="p-8">
+    <section className="px-[150px] pt-10">
       <h1 className="text-white text-center text-6xl mb-8 font-bold">Games</h1>
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6">

@@ -40,7 +40,7 @@ function Signup() {
     };
 
     return (
-        <section className="p-8">
+        <section className="p-8 h-[80vh]">
             <h1 className="text-center text-white text-6xl text-white font-bold">Register</h1>
             <div className="flex justify-center items-center p-4">
                 <form onSubmit={handleSubmit} className="backgroundCover px-4 py-6 w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/3">

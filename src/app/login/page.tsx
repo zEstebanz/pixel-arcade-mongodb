@@ -15,20 +15,21 @@ function Login() {
         const res = await signIn("credentials", {
             email: formData.get("email"),
             password: formData.get("password"),
-            redirect: false,
+            redirect: false, // No redirigir automáticamente
         });
 
-        if (res?.error) return setError(res.error as string);
+        if (res?.error) {
+            return setError(res.error as string);  // Mostrar error si las credenciales son inválidas
+        }
+
         if (res?.ok) {
-            // Redirigir al usuario a la página principal
+            // Redirigir al home después de iniciar sesión
             router.push("/");
-            // Recargar la página
-            window.location.reload();
         }
     };
 
     return (
-        <section className="p-8">
+        <section className="p-8 h-[80vh]">
             <h1 className="text-center text-white text-6xl font-bold">Login</h1>
             <div className="flex justify-center items-center p-4">
                 <form onSubmit={handleSubmit} className="backgroundCover px-4 py-6 w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/3">
@@ -40,6 +41,7 @@ function Login() {
                         placeholder="Email"
                         className="text-white bg-zinc-800 px-2 py-1 block w-full mb-2"
                         name="email"
+                        required
                     />
 
                     <label className="text-slate-300">Password:</label>
@@ -48,6 +50,7 @@ function Login() {
                         placeholder="Password"
                         className="text-white bg-zinc-800 px-2 py-1 block w-full mb-4"
                         name="password"
+                        required
                     />
 
                     <button className="buttonCustom bg-blue-500 text-white px-2 py-1 block w-full">

@@ -1,11 +1,14 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Pixelify_Sans } from 'next/font/google' // Importamos la fuente Pixelify Sans desde next/font
 import Nav from '@/components/Nav'
 import Providers from './Providers'
 import Footer from '@/components/Footer'
 
+// Cargar la fuente 'Inter'
 const inter = Inter({ subsets: ['latin'] })
+// Cargar la fuente 'Pixelify Sans'
+const pixelifySans = Pixelify_Sans({ weight: ['700'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Pixel Arcade',
@@ -19,14 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-
-      <div>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet" />
-      </div>
-
-      <body>
+      <body className={`${inter.className} ${pixelifySans.className}`}>
         <Providers>
           <Nav />
           <div className='indexCoverBack mt-16'>

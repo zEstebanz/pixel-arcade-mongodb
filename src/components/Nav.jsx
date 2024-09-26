@@ -1,17 +1,21 @@
 "use client"
 import Link from 'next/link';
-import { useSession } from 'next-auth/react';
+import { useSession, signOut } from 'next-auth/react';
 
 const Nav = () => {
     const { data: session } = useSession();
 
     const toggleMenu = () => {
         const menu = document.getElementById("navbar-default");
-        if (menu.style.display === "block") {
+        if (menu?.style.display === "block") {
             menu.style.display = "none";
         } else {
             menu.style.display = "block";
         }
+    };
+
+    const handleSignOut = () => {
+        signOut({ callbackUrl: '/' });  // Redirige a la página principal después del cierre de sesión
     };
 
     return (
@@ -29,14 +33,12 @@ const Nav = () => {
                 </button>
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
-
                         <li>
                             <Link href="/" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Home</Link>
                         </li>
 
                         {session ? (
                             <>
-
                                 <li>
                                     <Link href="/games" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Games</Link>
                                 </li>
@@ -44,13 +46,7 @@ const Nav = () => {
                                     <Link href="/contact" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Contact</Link>
                                 </li>
                                 <li>
-                                    <Link href="/turnos" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Pedir Turno</Link>
-                                </li>
-                                <li>
-                                    <Link href="/dashboard/turnos" className="buttonCustom2 block py-2 pl-3 pr-4 text-white rounded" aria-current="page">Mis Turnos</Link>
-                                </li>
-                                <li>
-                                    <Link href="/dashboard/profile" className="buttonCustom block py-2 pl-3 pr-4 text-white rounded" aria-current="page">PERFIL</Link>
+                                    <button onClick={handleSignOut} className="block py-2 pl-3 pr-4 text-white bg-red-600 hover:bg-red-700 rounded">Logout</button>
                                 </li>
                             </>
                         ) : (
@@ -58,7 +54,6 @@ const Nav = () => {
                                 <li>
                                     <Link href="/contact" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Contact</Link>
                                 </li>
-
                                 <li>
                                     <Link href="/register" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Register</Link>
                                 </li>
@@ -71,7 +66,6 @@ const Nav = () => {
                 </div>
             </div>
         </nav>
-
     );
 };
 
