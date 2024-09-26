@@ -17,9 +17,6 @@ function DashboardPage() {
                             <img src="https://cdn.icon-icons.com/icons2/665/PNG/512/alien_pixel2_icon-icons.com_60290.png" alt="Foto de perfil" className="w-16 h-16 rounded-full mx-auto mb-4  border border-white" />
                             <h2 className="text-xl font-semibold">Name: {session.user.fullname}</h2>
                             <h2 className="text-xl font-semibold">Email: {session.user.email}</h2>
-                            <button className="buttonCustom2 block py-2 pl-3 pr-4 text-white rounded rounded-lg mx-auto block mt-5" onClick={() => { signOut(); }}>
-                                Sign Out
-                            </button>
                         </div>
                     </div>
                 ) : (

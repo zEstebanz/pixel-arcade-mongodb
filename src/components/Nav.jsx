@@ -46,6 +46,12 @@ const Nav = () => {
                                     <Link href="/contact" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Contact</Link>
                                 </li>
                                 <li>
+                                    <Link href="/turnos" className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent" aria-current="page">Turnos</Link>
+                                </li>
+                                <li>
+                                <Link href="/dashboard/profile" className="block py-2 pl-3 pr-4 text-white bg-green-600 hover:bg-green-700 rounded">Perfil</Link>
+                                </li>
+                                <li>
                                     <button onClick={handleSignOut} className="block py-2 pl-3 pr-4 text-white bg-red-600 hover:bg-red-700 rounded">Logout</button>
                                 </li>
                             </>
