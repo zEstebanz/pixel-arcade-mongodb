@@ -43,9 +43,9 @@
 }
 
 .backgroundCover {
-  background-color: rgba(0, 0, 0, 0.096);
+  background-color: rgba(0, 0, 0, 0.66);
   border-radius: 20px;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 .boxGameCustom {

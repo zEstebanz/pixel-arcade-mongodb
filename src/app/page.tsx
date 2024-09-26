@@ -6,12 +6,12 @@ import { useSession } from "next-auth/react"; // Para obtener la sesión en el c
 // Navbar Component
 export default function Navbar() {
   const { data: session } = useSession(); // Obtener la sesión en el cliente
-
+  
   return (
-    <nav className="bg-black p-4">
-      <h1 className="backgroundCover textCenter font-mont mb-5 text-white text-2xl">PIXEL <span className="span">ARCADE</span></h1>
+    <nav className="p-10 pt-[100px]">
+      <h1 className="backgroundCover p-10 textCenter font-mont mb-5 text-white text-2xl">PIXEL <span className="span">ARCADE</span></h1>
 
-      <div className="text-white container mx-auto text-center backgroundCover h-screen ">
+      <div className="text-white container mx-auto text-center backgroundCover">
         {session ? (
           // Si la sesión está activa (usuario autenticado)
           <>
